@@ -2,5 +2,13 @@
   "name": "@jonatlop-ticketing/common",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "clean": "del-cli ./build/*",
+    "build": "yarn run clean && tsc"
+  },
+  "devDependencies": {
+    "del-cli": "^3.0.1",
+    "typescript": "^4.3.2"
+  }
 }
